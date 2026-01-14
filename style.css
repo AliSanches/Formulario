@@ -1,0 +1,44 @@
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#7a7a7a, #2e2e2e);
+}
+
+:root {
+    --bg-silver: #919191;
+    --bg-yellow: #f1ea95;
+    --bg-orange: #ebbc24;
+    --bg-red: #e44d26;
+    --bg-white: #f5efef;
+}
+
+.container-main {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--bg-white);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 600px;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.conter-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
