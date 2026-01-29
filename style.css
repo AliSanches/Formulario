@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     background: radial-gradient(#7a7a7a, #2e2e2e);
+    color: var(--cl-white);
 }
 
 :root {
@@ -16,29 +17,114 @@ body {
     --bg-orange: #ebbc24;
     --bg-red: #e44d26;
     --bg-white: #f5efef;
+    --blue-claro: #415baf;
+    --blue-escuro: #35498a;
+    --cl-red: #ff1111;
+    --cl-white: #fff;
+    --purple-claro: #404074;
+    --purple-escuro: #151547;
+}
+
+/* Colors BTN */
+.cl-red {
+    color: var(--cl-red);
 }
 
 .container-main {
     padding: 15px;
     border-radius: 8px;
-    background-color: var(--bg-white);
+    background-color: var(--purple-claro);
+    box-shadow: 0px 0px 5px rgb(202, 202, 202);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.line {
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    border-radius: 8px ;
+    background-color: var(--blue-claro);
+    color: var(--blue-claro);
+}
+
+.conter-icon {
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: var(--blue-claro);
+    cursor: pointer;
+}
+
+.header i {
+    color: #fff;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.conter-icon:hover {
+    background-color: var(--blue-escuro);
+    transition: 0.5s ease-in-out;
 }
 
 .form {
-    width: 600px;
+    width: 500px;
     padding: 10px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .conter-input {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.conter-input input {
+    margin: 0;
+}
+
+.form-input {
+    width: 210px;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.conter-check {
+    display: flex;
+    gap: 1rem;
+}
+
+.conter-check p {
+    margin: 0;
+}
+
+.btn-create {
+    margin-top: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: var(--blue-claro);
+    color: var(--bg-white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-create:hover {
+    background-color: var(--blue-escuro);
+    transition: 0.5s ease-in-out;
 }
